@@ -1,0 +1,163 @@
+<section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">my <span>Hobbies</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Gaming</h1>
+            <h2>Gaming is Love</h2>
+            <p>Video games allow you to experience excitement and danger all from the safety of your chair. 
+              You can play games that give you the opportunity to do things you never would be able to do 
+              in real-life. Many people play video games because it's an easy way to experience excitement.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Music</h1>
+            <h2>Music is Love</h2>
+            <p>Music exerts a powerful influence on human beings. It can boost memory, build task endurance, 
+              lighten your mood, reduce anxiety and depression, stave off fatigue, improve your response to 
+              pain, and help you work out more effectively.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/hbby2.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Toys</h1>
+            <h2>RC Cars is Love</h2>
+            <p>There is nothing so satisfying as watching this small, powerful car tear through the backyard with 
+              60 Mph, and quickly blazing across your pavement as you steers it and control the speed as you like.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/hbby3.png" alt="img">
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Career Section -->
+    <section id="services">
+      <div class="services container">
+        <div class="service-top">
+          <h1 class="section-title">Ca<span>re</span>er</h1>
+          <p>A career is a long-term professional journey you may determine based on your passions</p>
+            <p>So here is my Roadmap to Becoming a Software Engineer:</p>
+        </div>
+        <div class="service-bottom">
+          <div class="service-item">
+            <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+            <h2>Step 1:</h2>
+            <p>Earn A Degree In Information Technology or Similar Disciplines</p>
+          </div>
+          <div class="service-item">
+            <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+            <h2>Step 2:</h2>
+            <p>Acquire Knowledge of Programming Languages
+          </div>
+          <div class="service-item">
+            <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+            <h2>Step 3:</h2>
+            <p>Explore Data Structures and Algorithms</p>
+          </div>
+          <div class="service-item">
+            <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+            <h2>Step 4:</h2>
+            <p>Improve Your Skills</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+          <h2>Step 5:</h2>
+          <p>Create Projects From Scratch</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+        <h2>Step 6:</h2>
+        <p>Look For Internship Opportunities</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+        <h2>Step 7:</h2>
+        <p>Begin Looking for Employment Opportunities</p> 
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/color-glass/100/000000/laptop-coding.png" /></div>
+        <h2>Step 8:</h2>
+        <p>Take Your Technical Skills to the Next Level</p>
+      </div>
+    </div>
+  </div>
+  </section>
+    <!-- End Career Section -->
+
+CSS:
+
+/* Services Section */
+#services .services {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#services .service-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#services .service-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#services .service-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#services .service-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#services .service-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#services .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#services .service-item p {
+	color: white;
+	text-align: left;
+}
+/* End Services Section */
